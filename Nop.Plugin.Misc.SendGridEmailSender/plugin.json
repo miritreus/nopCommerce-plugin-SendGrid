@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Misc",
+  "FriendlyName": "SendGrid",
+  "SystemName": "Misc.SendGrid",
+  "Version": "4.80.1",
+  "SupportedVersions": [ "4.80" ],
+  "Author": "Miritreus",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Misc.SendGridEmailSender.dll",
+  "Description": "This plugin allows to integrate with SendGrid for sending emails"
+}
