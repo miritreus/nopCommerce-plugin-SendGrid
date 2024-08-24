@@ -21,7 +21,7 @@ public class NopStartup : INopStartup
 
         var settings = scope.ServiceProvider.GetService<SendGridSettings>();
 
-        if (settings?.IsEnabled ?? false)
+        if ((settings?.IsEnabled ?? false) && !string.IsNullOrEmpty(settings?.ApiKey))
         {
             services.AddScoped<IEmailSender, Services.SendGridEmailSender>();
         }
