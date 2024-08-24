@@ -1,5 +1,5 @@
 ﻿using Nop.Core;
-using Nop.Services.Authentication.External;
+using Nop.Plugin.Misc.SendGridEmailSender;
 using Nop.Services.Common;
 using Nop.Services.Configuration;
 using Nop.Services.Localization;
@@ -12,52 +12,45 @@ namespace Nop.Plugin.ExternalAuth.Facebook;
 /// </summary>
 public class SendGridPlugin : BasePlugin, IMiscPlugin
 {
-    #region Fields
-
     protected readonly ILocalizationService _localizationService;
     protected readonly ISettingService _settingService;
     protected readonly IWebHelper _webHelper;
 
-    #endregion
-
-    #region Ctor
-
-    public SendGridPlugin(ILocalizationService localizationService,
-        ISettingService settingService,
-        IWebHelper webHelper)
+    public SendGridPlugin(ILocalizationService localizationService, ISettingService settingService, IWebHelper webHelper)
     {
         _localizationService = localizationService;
         _settingService = settingService;
         _webHelper = webHelper;
     }
 
-    #endregion
-
-    #region Methods
-
-    /// <summary>
-    /// Gets a configuration page URL
-    /// </summary>
     public override string GetConfigurationPageUrl()
     {
         return $"{_webHelper.GetStoreLocation()}Admin/SendGridEmailSender/Configure";
-    }   
+    }
 
     public override async Task InstallAsync()
     {
-        
+        //settings
+        await _settingService.SaveSettingAsync(new SendGridSettings());
+
+        //locales
+        await _localizationService.AddOrUpdateLocaleResourceAsync(new Dictionary<string, string>
+        {
+            ["Plugins.Misc.SendGrid.IsEnabled"] = "Enabled",
+            ["Plugins.Misc.SendGrid.ApiKey"] = "API key",
+            ["Plugins.Misc.SendGrid.SettingsText"] = "Configure SendGrid email sender with your API key. When you change the value of enabled, the application will be restarted.",
+
+        });
 
         await base.InstallAsync();
     }
 
-    /// <summary>
-    /// Uninstall the plugin
-    /// </summary>
-    /// <returns>A task that represents the asynchronous operation</returns>
     public override async Task UninstallAsync()
     {
+        await _settingService.DeleteSettingAsync<SendGridSettings>();
+
+        await _localizationService.DeleteLocaleResourcesAsync("Plugins.Misc.SendGrid");
+
         await base.UninstallAsync();
     }
-
-    #endregion
 }

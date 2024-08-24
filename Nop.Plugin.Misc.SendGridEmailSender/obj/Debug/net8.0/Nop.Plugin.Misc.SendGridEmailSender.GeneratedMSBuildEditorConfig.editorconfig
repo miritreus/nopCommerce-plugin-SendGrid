@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Nop.Plugin.Misc.SendGridEmailSender
-build_property.ProjectDir = D:\myprojects\nopcommerce-sendgrid-plugin\Nop.Plugin.Misc.SendGridEmailSender\
+build_property.ProjectDir = D:\projects\nopCommerce\src\Plugins\Nop.Plugin.Misc.SendGridEmailSender\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

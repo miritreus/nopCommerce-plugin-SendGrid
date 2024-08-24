@@ -8,9 +8,9 @@ namespace Nop.Plugin.Misc.SendGridEmailSender.Models;
 /// </summary>
 public record ConfigurationModel : BaseNopModel
 {
-    [NopResourceDisplayName("Plugins.Misc.SendGrid.Enabled")]
+    [NopResourceDisplayName("Plugins.Misc.SendGrid.IsEnabled")]
     public bool IsEnabled { get; set; }
 
-    [NopResourceDisplayName("Plugins.Misc.SendGrid.ClientSecret")]
-    public string ClientSecret { get; set; }
+    [NopResourceDisplayName("Plugins.Misc.SendGrid.ApiKey")]
+    public string ApiKey { get; set; }
 }
