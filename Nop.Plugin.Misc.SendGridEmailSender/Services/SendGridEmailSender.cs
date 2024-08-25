@@ -89,7 +89,7 @@ public class SendGridEmailSender : IEmailSender
 
             if (attachment != null)
             { 
-                message.Attachments.Add(attachment);
+                message.AddAttachment(attachment);
             }
         }
 
@@ -108,7 +108,7 @@ public class SendGridEmailSender : IEmailSender
 
                 if (attachment != null)
                 {
-                    message.Attachments.Add(attachment);
+                    message.AddAttachment(attachment);
                 }
             }
         }

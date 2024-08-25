@@ -24,9 +24,6 @@ public class NopStartup : INopStartup
         if ((settings?.IsEnabled ?? false) && !string.IsNullOrEmpty(settings?.ApiKey))
         {
             services.AddScoped<IEmailSender, Services.SendGridEmailSender>();
-        }
-        else
-        {
-        }
+        }     
     }
 }
