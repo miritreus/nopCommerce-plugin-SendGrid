@@ -36,10 +36,11 @@ public class SendGridPlugin : BasePlugin, IMiscPlugin
         //locales
         await _localizationService.AddOrUpdateLocaleResourceAsync(new Dictionary<string, string>
         {
-            ["Plugins.Misc.SendGrid.IsEnabled"] = "Enabled",
-            ["Plugins.Misc.SendGrid.ApiKey"] = "API key",
-            ["Plugins.Misc.SendGrid.SettingsText"] = "Configure SendGrid email sender with your API key. When you change the value of enabled, the application will be restarted.",
-
+            [Constants.ISENABLED_FIELD_RESOURCENAME] = "Enabled",
+            [Constants.ISENABLED_FIELD_HINT_RESOURCENAME] = "Enable/disable the plugin. The application will be restarted.",
+            [Constants.APIKEY_FIELD_RESOURCENAME] = "API key",
+            [Constants.APIKEY_FIELD_HINT_RESOURCENAME] = "Enter your API key here. You can find it in SendGrid.",
+            [Constants.APIKEY_FIELD_VALUE_REQUIRED_RESOURCENAME] = "API key is required"          
         });
 
         await base.InstallAsync();
@@ -49,7 +50,7 @@ public class SendGridPlugin : BasePlugin, IMiscPlugin
     {
         await _settingService.DeleteSettingAsync<SendGridSettings>();
 
-        await _localizationService.DeleteLocaleResourcesAsync("Plugins.Misc.SendGrid");
+        await _localizationService.DeleteLocaleResourcesAsync(Constants.RESOURCES_PREFIX);
 
         await base.UninstallAsync();
     }
