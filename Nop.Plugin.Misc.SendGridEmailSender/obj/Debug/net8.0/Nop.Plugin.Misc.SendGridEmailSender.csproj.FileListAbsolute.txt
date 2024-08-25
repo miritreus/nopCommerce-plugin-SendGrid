@@ -316,3 +316,4 @@ D:\projects\nopCommerce\src\Plugins\Nop.Plugin.Misc.SendGridEmailSender\obj\Debu
 D:\projects\nopCommerce\src\Plugins\Nop.Plugin.Misc.SendGridEmailSender\obj\Debug\net8.0\refint\Nop.Plugin.Misc.SendGridEmailSender.dll
 D:\projects\nopCommerce\src\Plugins\Nop.Plugin.Misc.SendGridEmailSender\obj\Debug\net8.0\Nop.Plugin.Misc.SendGridEmailSender.pdb
 D:\projects\nopCommerce\src\Plugins\Nop.Plugin.Misc.SendGridEmailSender\obj\Debug\net8.0\ref\Nop.Plugin.Misc.SendGridEmailSender.dll
+D:\projects\nopCommerce\src\Presentation\Nop.Web\Plugins\Misc.SendGridEmailSender\logo.png

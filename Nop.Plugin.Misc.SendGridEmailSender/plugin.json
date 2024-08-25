@@ -7,5 +7,5 @@
   "Author": "Miritreus",
   "DisplayOrder": 1,
   "FileName": "Nop.Plugin.Misc.SendGridEmailSender.dll",
-  "Description": "This plugin allows to integrate with SendGrid for sending emails"
+  "Description": "This plugin allows to integrate with the SendGrid API for sending emails"
 }

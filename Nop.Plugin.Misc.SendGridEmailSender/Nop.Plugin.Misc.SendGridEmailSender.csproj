@@ -37,6 +37,11 @@
   <ItemGroup>
     <PackageReference Include="SendGrid" Version="9.29.3" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <!-- This target executes after "Build" target -->
   <Target Name="NopTarget" AfterTargets="Build">
     <!-- Delete unnecessary libraries from plugins path -->

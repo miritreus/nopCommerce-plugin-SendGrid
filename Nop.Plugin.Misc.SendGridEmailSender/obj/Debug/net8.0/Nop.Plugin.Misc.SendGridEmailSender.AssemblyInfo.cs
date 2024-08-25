@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("SOME_COPYRIGHT")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5aa93865683d7eb998e9907cbcb6c151564c18fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb5323bcd6afc26159974b7e0e25176ef316dfec")]
 [assembly: System.Reflection.AssemblyProductAttribute("Nop.Plugin.Misc.SendGridEmailSender")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Nop.Plugin.Misc.SendGridEmailSender")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
