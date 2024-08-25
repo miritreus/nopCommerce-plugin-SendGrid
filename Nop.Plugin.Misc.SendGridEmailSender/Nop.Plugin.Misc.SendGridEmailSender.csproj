@@ -1,17 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Copyright>SOME_COPYRIGHT</Copyright>
+    <Copyright>Copyright © GitGambit</Copyright>
     <Company>GitGambit</Company>
     <Authors>Miritreus</Authors>
-    <PackageLicenseUrl>PACKAGE_LICENSE_URL</PackageLicenseUrl>
-    <PackageProjectUrl>PACKAGE_PROJECT_URL</PackageProjectUrl>
-    <RepositoryUrl>REPOSITORY_URL</RepositoryUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageProjectUrl>https://www.nopcommerce.com/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/miritreus/nopCommerce-plugin-SendGrid-</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <OutputPath>..\..\Presentation\Nop.Web\Plugins\Misc.SendGridEmailSender</OutputPath>
     <OutDir>$(OutputPath)</OutDir>
     <!--Set this parameter to true to get the dlls copied from the NuGet cache to the output of your    project. You need to set this parameter to true if your plugin has a nuget package to ensure that   the dlls copied from the NuGet cache to the output of your project-->
-    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
