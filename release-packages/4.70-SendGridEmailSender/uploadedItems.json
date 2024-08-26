@@ -1,0 +1,8 @@
+﻿[
+  {
+    "Type": "Plugin",
+    "SupportedVersion": "4.70",
+    "DirectoryPath": "SendGridEmailSender/nopCommerce-4.70/Misc.SendGridEmailSender/",
+    "SystemName": "Misc.SendGridEmailSender"
+  }
+]

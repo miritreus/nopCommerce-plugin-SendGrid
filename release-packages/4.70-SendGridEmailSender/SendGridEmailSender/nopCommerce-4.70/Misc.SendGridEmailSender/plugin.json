@@ -2,7 +2,7 @@
   "Group": "Misc",
   "FriendlyName": "SendGrid",
   "SystemName": "Misc.SendGridEmailSender",
-  "Version": "4.70.4",
+  "Version": "4.70",
   "SupportedVersions": [ "4.70" ],
   "Author": "Miritreus",
   "DisplayOrder": 1,
